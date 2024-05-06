@@ -1,5 +1,11 @@
+![Nutritional-value-of-wine](https://github.com/AdwoaM/Project_3_Wine-Quality-Prediction/blob/main/Images/Nutritional-value-of-wine.jpg)
+
+
 # Wine Quality Prediction with Machine Learning and Streamlit
 This project predicts the quality of wines based on physicochemical features using machine learning techniques and provides interactive visualization and analysis through a Streamlit web application.
+
+## Motivation for Quality Prediction:
+The motivation for quality prediction in various industries such as manufacturing, healthcare, and retail stems from the need to improve efficiency, reduce costs, and enhance customer satisfaction. Predicting the quality of products or services allows companies to identify potential issues early, optimize processes, and deliver high-quality outcomes consistently.
 
 ## Overview
 The goal of this project is to develop a predictive model that can accurately assess the quality of wines based on various physicochemical properties. The model is deployed using Streamlit to create an intuitive and interactive interface for users to input wine characteristics and visualize predictions and analysis.
@@ -7,6 +13,34 @@ The goal of this project is to develop a predictive model that can accurately as
 ## Dataset
 The dataset used for training and evaluation is the Wine Quality dataset, which contains samples of red and white wines. Each sample is described by 11 input variables, including fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, and alcohol. The target variable, quality, is a rating between 3 and 8.
 The dataset can be found at [link to dataset].
+
+**fixed acidity**: Wines mostly contain tartaric, malic, citric, and succinic fixed acids. Grapes grown in cool climates provide wines with high acidity and a sour flavor. You can take steps to lessen the acidity of these highly acidic wines..
+
+**volatile acidity**:It refers to the acidic elements of a wine that are gaseous, rather than liquid, and therefore can be sensed as a smell The main acid connected to the flavor and aroma of vinegar is acetic acid.
+
+**citric acid**: A supplement of acid added during fermentation to help winemakers increase the acidity of their wine, particularly from grapes produced in warmer climates.
+
+**residual sugar**: Natural sugars from grapes that remain in wine after alcoholic fermentation is complete.
+
+**chlorides**: The saltiness in wine is influenced by this.
+
+**free sulfur dioxide**: Quantity of SO2 that is unbound from other molecules. Throughout the whole winemaking process, sulfur dioxide is utilized to stop oxidation and microbiological growth.
+
+**total sulfur dioxide**: The amount of SO2 in the wine that is free as well as the amount that is attached to other substances like sugars, aldehydes, or pigments.
+
+**density**: The concentration of alcohol, sugar, glycerol, and other dissolved substances in wine determines its density mainly..
+
+**pH**: Technique for calculating ripeness in relation to acidity.
+
+**sulphates**: A common food preservative used in winemaking to preserve the freshness and flavor.
+
+**alcohol**: The amount of alcohol the wine contains.
+
+**quality**: How the wine is rated. In this dataset the lowest quality is 3 while the highest is 8.
+
+## Reason for Data Selection:
+The Wine Quality dataset was selected because it provides a diverse range of features that can potentially influence the quality of wine. Additionally, the dataset is publicly available, well-documented, and widely used in machine learning research, making it suitable for experimentation and comparison of different predictive models.
+
 
 ## Methodology
 **Data Preprocessing**: The dataset is cleaned and preprocessed to handle missing values, outliers, and categorical variables. Feature scaling and encoding are applied as necessary.
@@ -72,7 +106,27 @@ Based on the classification report for a logistic regression model, we observe a
 
 **Consideration of Multiple Metrics:** It's important to consider multiple metrics and not rely solely on one metric to evaluate model performance. Different metrics provide different insights into a model's performance, and it's essential to understand the trade-offs between them.
 
+## RandomF-featureImportance-white
+ These values represent the importance or contribution of each feature to the model's predictive performance. Higher importance values indicate that the corresponding feature has a greater influence on the model's predictions.
 
+You can compare the importance of different features to understand their relative importance in the model. Features with higher importance are considered more influential in making predictions, while features with lower importance have less impact.
+
+![RandomF-featureImportance-whiteF](https://github.com/AdwoaM/Project_3_Wine-Quality-Prediction/blob/main/Images/RandomF-featureImportances-white.png)
+
+## Streamlit wineapp-screenshot
+This outlines the functionality and purpose of the wine quality prediction app, providing users with the necessary information to input their wine characteristics and interpret the prediction results effectively.
+
+![Streamlit wineapp-screenshot](https://github.com/AdwoaM/Project_3_Wine-Quality-Prediction/blob/main/Images/Streamlit%20wineapp-screenshot.png)
+
+**User Input Parameters:** These are the specific characteristics or attributes of the wine that the user can input into the app for quality prediction. The parameters include fixed acidity, volatile acidity, citric acid, residual sugar, and chlorides, each with its range of possible values.
+
+**Description of Features:** Each feature is accompanied by a brief description explaining its significance in wine and its acceptable range of values. This helps users understand the meaning and relevance of each parameter when assessing wine quality.
+
+**Wine Quality Prediction App:** This is the name of the app or tool that users can utilize to predict the quality of wine based on the input parameters provided.
+
+**Prediction Guidelines:** The app provides guidelines for interpreting the quality prediction results. If the predicted quality is less than 7, it indicates poor quality wine, whereas a prediction of 7 or higher suggests excellent quality wine.
+
+**Options for Wine Type:** The app offers users the choice between predicting the quality of white wine or red wine. This allows users to specify the type of wine they are evaluating, as different types may have distinct characteristics and quality criteria.
 
 ## Features
 **Prediction Input**: Users can input wine characteristics such as acidity, sugar content, and alcohol level to receive quality predictions.
@@ -85,6 +139,9 @@ Based on the classification report for a logistic regression model, we observe a
 Install the required dependencies listed in `requirements.txt`.
 Run the Streamlit application using the command `streamlit run app.py`.
 Access the application via the provided URL and interact with the interface to input wine characteristics and explore predictions and analysis.
+
+## Challenges and Successes:
+One challenge in quality prediction is handling imbalanced datasets, where certain quality ratings may be underrepresented. Successes include achieving accurate predictions and identifying key factors that influence quality.
 
 ## Future Improvements
 Incorporate additional features or data sources such as wine origin or production process to improve prediction accuracy.
