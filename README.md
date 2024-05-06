@@ -1,3 +1,6 @@
+![Fun fact i](./Images/redwine_v_whitewine.png)
+![Fun Fact II](./Images/Nutritional-value-of-wine.jpg)
+
 # Wine Quality Prediction with Machine Learning and Streamlit
 This project predicts the quality of wines based on physicochemical features using machine learning techniques and provides interactive visualization and analysis through a Streamlit web application.
 
