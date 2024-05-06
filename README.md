@@ -91,6 +91,10 @@ Incorporate additional features or data sources such as wine origin or productio
 Experiment with advanced machine learning algorithms or ensemble techniques to further enhance model performance.
 Enhance the user interface and visualization capabilities of the Streamlit application based on user feedback.
 
+## Streamlit Video Snippet
+
+[streamlit-wineapp-2024-05-05-21-05-83.webm](https://github.com/AdwoaM/Project_3_Wine-Quality-Prediction/assets/149966206/5899d82d-56de-4f9d-a7e4-f9ef7e230e3b)
+
 ## Contributors
 [Adwoa & Owura]
 
