@@ -11,7 +11,7 @@ The motivation for quality prediction in various industries such as manufacturin
 The goal of this project is to develop a predictive model that can accurately assess the quality of wines based on various physicochemical properties. The model is deployed using Streamlit to create an intuitive and interactive interface for users to input wine characteristics and visualize predictions and analysis.
 
 ## Dataset
-The dataset used for training and evaluation is the Wine Quality dataset, which contains samples of red and white wines. Each sample is described by 11 input variables, including fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, and alcohol. The target variable, quality, is a rating between 3 and 8.
+The dataset used for training and evaluation is the Wine Quality dataset, which contains samples of red and white wines. Each sample is described by 11 input variables, including fixed acidity, volatile acidity, citric acid, residual sugar, chlorides, free sulfur dioxide, total sulfur dioxide, density, pH, sulphates, and alcohol. The target variable, quality, is a rating between 0 and 10.
 The dataset can be found at [link to dataset].
 
 **fixed acidity**: Wines mostly contain tartaric, malic, citric, and succinic fixed acids. Grapes grown in cool climates provide wines with high acidity and a sour flavor. You can take steps to lessen the acidity of these highly acidic wines..
@@ -36,7 +36,7 @@ The dataset can be found at [link to dataset].
 
 **alcohol**: The amount of alcohol the wine contains.
 
-**quality**: How the wine is rated. In this dataset the lowest quality is 3 while the highest is 8.
+**quality**: How the wine is rated. In this dataset the lowest quality is 0 while the highest is 10.
 
 ## Reason for Data Selection:
 The Wine Quality dataset was selected because it provides a diverse range of features that can potentially influence the quality of wine. Additionally, the dataset is publicly available, well-documented, and widely used in machine learning research, making it suitable for experimentation and comparison of different predictive models.
@@ -147,10 +147,6 @@ One challenge in quality prediction is handling imbalanced datasets, where certa
 Incorporate additional features or data sources such as wine origin or production process to improve prediction accuracy.
 Experiment with advanced machine learning algorithms or ensemble techniques to further enhance model performance.
 Enhance the user interface and visualization capabilities of the Streamlit application based on user feedback.
-
-## Streamlit Video Snippet
-
-[streamlit-wineapp-2024-05-05-21-05-83.webm](https://github.com/AdwoaM/Project_3_Wine-Quality-Prediction/assets/149966206/5899d82d-56de-4f9d-a7e4-f9ef7e230e3b)
 
 ## Contributors
 [Adwoa & Owura]
